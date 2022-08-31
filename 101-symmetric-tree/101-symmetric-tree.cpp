@@ -14,8 +14,8 @@ public:
     bool isSymmetricTree(TreeNode* rootLeft, TreeNode* rootrRight){
         if(rootLeft == NULL && rootrRight == NULL)
             return true;
-        if(rootLeft == NULL || rootrRight == NULL) {
-            return false;}
+        if(rootLeft == NULL || rootrRight == NULL)
+            return false;
         if(rootLeft->val != rootrRight->val)
             return false;
         return isSymmetricTree(rootLeft->left, rootrRight->right) && 
